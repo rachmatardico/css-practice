@@ -1,4 +1,9 @@
-.container-fluid img{
+.jumbotron img{
     width: 200px;
     border: 5px solid #959191;
+}
+
+.about hr {
+    width: 250px;
+    border-top: 3px solid #959191;
 }
