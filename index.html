@@ -1,219 +1,62 @@
-<!doctype html>
-<html lang="en" id="home">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/ekko-lightbox.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#home" class="navbar-brand page-scroll">
-                    <i class="glyphicon glyphicon-home"></i>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about" class="page-scroll">About</a></li>
-                    <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-                    <li><a href="#contact" class="page-scroll">Contact</a></li>
-                </ul>
-            </div>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo" class="logo-img">
+            <h4 class="logo">Rachmat Ardico</h4>
         </div>
-    </div>
-    <!-- Akhir Navbar -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="" class="nav-link">Home</a></li>
+                <li><a href="" class="nav-link">About</a></li>
+                <li><a href="" class="nav-link">Skills</a></li>
+                <li><a href="" class="nav-link">Portfolio</a></li>
+                <li><a href="" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron bg-secondary text-center">
-        <img src="/img/profile.jpg" class="img-circle" alt="Profile Picture">
-        <h1>Rachmat Ardico Perdana</h1>
-        <p>Tech Enthusiast | Web Developer | Web3 Enthusiast</p>
-    </div>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">About</h2>
-                    <hr>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                        Doloribus, facere dolore. Soluta vel cumque ipsam officia eum 
-                        quaerat dignissimos dolorum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                        Doloribus, facere dolore.amet consectetur adipisicing elit. 
-                        Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                        Doloribus, facere dolore. Soluta vel cumque ipsam officia eum 
-                        quaerat dignissimos dolorum.
-                    </p>
-                </div>
-                <div class="col-sm-5">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                        Doloribus, facere dolore. Soluta vel cumque ipsam officia eum 
-                        quaerat dignissimos dolorum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                        Doloribus, facere dolore.amet consectetur adipisicing elit. 
-                        Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                        Doloribus, facere dolore. Soluta vel cumque ipsam officia eum 
-                        quaerat dignissimos dolorum.
-                    </p>
-                </div>
-            </div>
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </section>
-    <!-- Akhir About -->
+    </header>
 
-    <!-- Portfolio -->
-    <section class="portfolio bg-secondary py-3" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">Portfolio</h2>
-                    <hr>
-                </div>
+    <main>
+       <div class="header-container">
+            <div class="header-image">
+                <img src="./img/profile.png" alt="Header Image">
             </div>
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="img/portfolio/programming.jpg" class="thumbnail" data-gallery="example-gallery" data-toggle="lightbox" 
-                    data-title="Programming" data-footer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                    Doloribus, facere dolore.">
-                        <img src="img/portfolio/programming.jpg" class="img-fluid" alt="Programming">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/portfolio/figma.jpg" data-gallery="example-gallery" class="thumbnail" data-toggle="lightbox" 
-                    data-title="UI/UX Design" data-footer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                    Doloribus, facere dolore.">
-                        <img src="img/portfolio/figma.jpg" class="img-fluid" alt="UI/UX Design">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/portfolio/trading.jpg" data-gallery="example-gallery" class="thumbnail" data-toggle="lightbox" 
-                    data-title="Trading Cryptocurrencies" data-footer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                    Doloribus, facere dolore.">
-                        <img src="img/portfolio/trading.jpg" class="img-fluid" alt="Trading Cryptocurrencies">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/portfolio/boxing.jpg" data-gallery="example-gallery" class="thumbnail" data-toggle="lightbox" 
-                    data-title="Boxing" data-footer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                    Doloribus, facere dolore.">
-                        <img src="img/portfolio/boxing.jpg" class="img-fluid" alt="Boxing">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/portfolio/wrestling.jpg" data-gallery="example-gallery" class="thumbnail" data-toggle="lightbox" 
-                    data-title="Wrestling" data-footer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                    Doloribus, facere dolore.">
-                        <img src="img/portfolio/wrestling.jpg" class="img-fluid" alt="Wrestling">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/portfolio/kickboxing.jpg" data-gallery="example-gallery" class="thumbnail" data-toggle="lightbox" 
-                    data-title="Kickboxing" data-footer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Temporibus dolorum enim ab vitae, nam quod ad vel doloribus. 
-                    Doloribus, facere dolore.">
-                        <img src="img/portfolio/kickboxing.jpg" class="img-fluid" alt="Kickboxing">
-                    </a>
+            <div class="header-text">
+                <h1>Hi There!</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Repellendus minus a rem alias cum? Molestias dolore ea 
+                    praesentium unde culpa possimus, ut consequatur amet 
+                    assumenda explicabo ad ipsa veritatis est obcaecati 
+                    deserunt ex, modi quisquam quo earum? Sequi corrupti illum, 
+                    ratione nihil rerum maiores vitae dolor aliquam rem consequuntur 
+                    corporis?
+                </p>
+                <div class="cta">
+                    <a href="" class="cta-button">Download CV</a>
+                    <a href="" class="cta-button">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Akhir Portfolio -->
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">Contact</h2>
-                    <hr>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Input your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Input your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="telp">Phone Number</label>
-                        <input type="tel" id="telp" class="form-control" placeholder="Input your phone number">
-                    </div>
-                    <select class="form-control">
-                        <option value="">-- Choose Category --</option>
-                        <option value="">Web Design</option>
-                        <option value="">Web Development</option>
-                    </select>
-                    <div class="form-group">
-                        <label for="messages">Messages</label>
-                        <textarea id="messages" rows="10" class="form-control" placeholder="Input your messages"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Messages</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Akhir Contact -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p>&copy; copyright by <a href="https://youtube.com/webprogrammingunpas">webprogrammingunpas</a> 2024 | build by. <a href="https://twitter.com/0xmtt">Rachmat Ardico Perdana</a></p>
-                </div>                   
-            </div>
-        </div>
-    </footer>
-    <!-- Akhir Footer -->
-    <script src="./js/jquery-1.9.1.js"></script>
-    <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-    </script>
-    <script src="./js/jquery.easing.js"></script>
-    <script src="./js/ekko-lightbox.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       </div> 
+    </main>
     <script src="./js/script.js"></script>
-  </body>
+</body>
 </html>
