@@ -1,0 +1,138 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.logo-container img {
+    width: 30px;
+    height: 30px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+    background-color: #EEEEE7;
+}
+
+header {
+	display: flex;
+    padding: 0 5vw;
+    height: 10vh;
+	margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: #323230;
+    text-decoration: none;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    display: none;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 29px;
+    opacity: 0;
+    left: -6px;
+    top: -6px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(54, 53, 53);
+    border-radius: 10px;
+    transition: .7s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child{
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:last-child {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+        z-index: 6;
+    }
+    
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 75%;
+        height: 150vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        background-color: #323230;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    nav .nav-links .nav-link{
+        color: white;
+        font-weight: 500;
+    }
+
+    nav ul.slide {
+        opacity: .85;
+        transform: translateX(0);
+    }
+
+    .logo {
+        white-space: nowrap;
+    }
+}
