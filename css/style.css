@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .logo-container img {
@@ -55,6 +56,10 @@ nav {
 .nav-link {
     color: #323230;
     text-decoration: none;
+}
+
+.nav-link:hover, .nav-link:active {
+    border-bottom: 3px solid #323230;
 }
 
 /* Hamburger Menu */
@@ -146,6 +151,13 @@ nav {
     text-decoration: none;
     margin-top: 10px;
     border-radius: 10px;
+    transition: .5s ease;
+}
+
+.cta .cta-button:hover {
+    background-color: #EEEEE7;
+    color: #323230;
+    border: 2px solid #323230;
 }
 
 /* Skills styling */
@@ -196,6 +208,14 @@ nav {
 
 .skills .tech {
     border: 2px solid #EEEEE7;
+    transition: .5s ease;
+}
+
+.skills .tech:hover {
+    border: none;
+    background-color: #EEEEE7;
+    color: #323230;
+    font-weight: 500;
 }
 
 /* Responsive breakpoints */
@@ -210,7 +230,7 @@ nav {
         right: 0;
         top: 0;
         width: 75%;
-        height: 150vh;
+        height: 100vh;
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
