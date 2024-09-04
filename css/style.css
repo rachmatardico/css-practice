@@ -20,6 +20,12 @@ header {
     height: 10vh;
 	margin: auto;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #EEEEE7;
+    opacity: 0.85;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .logo-container,
@@ -106,6 +112,7 @@ nav {
     margin-top: 5rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 100px;
 }
 
 .header-container .header-image {
