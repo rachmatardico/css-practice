@@ -141,6 +141,56 @@ nav {
     border-radius: 10px;
 }
 
+/* Skills styling */
+.about-and-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    background-color: #323230;
+    justify-content: space-around;
+    padding: 100px 10px;
+}
+
+.about {
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+.about h2{
+    font-size: 2em;
+}
+
+.about h2, .about p {
+    color: #EEEEE7;
+}
+
+.skills {
+    max-width: 400px;
+}
+
+.skills .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .tech-stack .tech {
+    margin: 3px;
+    padding: .4rem;
+    border-radius: 10px;
+}
+
+.skills h2 {
+    font-size: 2em;
+}
+
+.skills h2, .skills span {
+    color: #EEEEE7;
+}
+
+.skills .tech {
+    border: 2px solid #EEEEE7;
+}
+
 /* Responsive breakpoints */
 @media screen and (max-width: 576px) {
     .menu-toggle {
