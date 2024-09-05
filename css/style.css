@@ -319,7 +319,7 @@ nav {
         position: absolute;
         right: 0;
         top: 0;
-        width: 75%;
+        width: 80%;
         height: 100vh;
         justify-content: space-evenly;
         flex-direction: column;
@@ -333,6 +333,7 @@ nav {
     nav .nav-links .nav-link{
         color: white;
         font-weight: 500;
+        font-size: 1.5em;
     }
 
     nav ul.slide {
