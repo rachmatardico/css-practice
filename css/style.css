@@ -150,7 +150,7 @@ nav {
     text-decoration: none;
     margin-top: 10px;
     border-radius: 10px;
-    transition: .5s ease;
+    transition: background .5s ease;
 }
 
 .cta .cta-button:hover {
@@ -171,7 +171,7 @@ nav {
 
 .about {
     max-width: 500px;
-    margin-bottom: 50px;
+    align-self: center;
 }
 
 .about h2{
@@ -192,8 +192,8 @@ nav {
 }
 
 .skills .tech-stack .tech {
-    margin: 3px;
-    padding: .4rem;
+    margin: 5px;
+    padding: .4rem 1.3rem;
     border-radius: 10px;
 }
 
@@ -349,6 +349,10 @@ nav {
     
     .header-container .header-text {
         text-align: center;
+    }
+
+    .about {
+        margin-bottom: 50px;
     }
 }
 
