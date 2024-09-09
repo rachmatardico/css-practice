@@ -222,6 +222,67 @@ nav {
   font-weight: 500;
 }
 
+/* Portfolio Styling */
+.portfolio .portfolio-header {
+  padding: 100px 10px;
+  text-align: center;
+}
+
+.portfolio .portfolio-header h2 {
+  font-size: 2em;
+}
+
+.portfolio .portfolio-header p {
+  font-size: 1em;
+}
+
+.bento-gallery {
+  margin: 0 auto;
+  width: 50%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "purple purple green green"
+    "grey grey green green"
+    "orange blue blue blue";
+  gap: 15px;
+}
+
+.bento {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+}
+
+.bento p {
+  margin: auto;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #323230;
+}
+
+.bento:nth-child(1) {
+  background-color: rgb(172, 57, 214);
+  grid-area: purple;
+}
+.bento:nth-child(2) {
+  background-color: rgb(18, 206, 165);
+  grid-area: green;
+}
+.bento:nth-child(3) {
+  background-color: rgb(209, 209, 209);
+  grid-area: grey;
+}
+.bento:nth-child(4) {
+  background-color: rgb(247, 181, 38);
+  grid-area: orange;
+}
+.bento:nth-child(5) {
+  background-color: rgb(22, 134, 203);
+  grid-area: blue;
+}
+
 /* ---> Contact us styling <--- */
 .contact .contact-header {
   background-color: #eeeee7;
@@ -326,6 +387,88 @@ footer a {
 }
 
 /* Responsive breakpoints */
+
+@media screen and (max-width: 1280px) {
+    .logo {
+      white-space: nowrap;
+    }
+  
+    .header-container .header-image {
+      max-width: 300px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .header-container .header-text {
+      max-width: 400px;
+    }
+  
+    .about-and-skills-container {
+      background-color: #323230;
+      padding: 100px 0px;
+    }
+  
+    .about {
+      max-width: 300px;
+    }
+  
+    .skills {
+      max-width: 300px;
+    }
+    
+    .bento-gallery {
+      width: 80%;
+      grid-template-areas: 
+      'purple purple green blue'
+      'grey orange orange blue';
+    }
+  
+    .bento {
+      min-height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo {
+      white-space: nowrap;
+    }
+  
+    .header-container .header-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .header-container .header-text {
+      text-align: center;
+    }
+  
+    .about-and-skills-container {
+      background-color: #323230;
+      padding: 100px 0px;
+    }
+  
+    .about {
+      max-width: 300px;
+    }
+  
+    .skills {
+      max-width: 300px;
+    }
+  
+    .bento-gallery {
+      width: 80%;
+      grid-template-areas: 
+      'purple purple'
+      'green blue'
+      'grey blue'
+      'orange orange';
+    }
+  
+    .bento {
+      min-height: 100px;
+    }
+  }
+
 @media screen and (max-width: 576px) {
   .menu-toggle {
     display: flex;
@@ -378,61 +521,18 @@ footer a {
   .about {
     margin-bottom: 50px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .logo {
-    white-space: nowrap;
+  .bento-gallery {
+    width: 100%;
+    grid-template-areas: 
+    "purple" 
+    "green" 
+    "grey" 
+    "orange" 
+    "blue";
   }
 
-  .header-container .header-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .header-container .header-text {
-    text-align: center;
-  }
-
-  .about-and-skills-container {
-    background-color: #323230;
-    padding: 100px 0px;
-  }
-
-  .about {
-    max-width: 300px;
-  }
-
-  .skills {
-    max-width: 300px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .logo {
-    white-space: nowrap;
-  }
-
-  .header-container .header-image {
-    max-width: 300px;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .header-container .header-text {
-    max-width: 400px;
-  }
-
-  .about-and-skills-container {
-    background-color: #323230;
-    padding: 100px 0px;
-  }
-
-  .about {
-    max-width: 300px;
-  }
-
-  .skills {
-    max-width: 300px;
+  .bento {
+    border-radius: 0;
   }
 }
