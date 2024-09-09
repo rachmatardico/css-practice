@@ -114,10 +114,16 @@
               website or need help with web development. Let's bring your ideas
               to life!
             </p>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Write your message here"></textarea>
-            <a href="#" class="cta-button">Submit</a>
+            <form action="https://formspree.io/f/xqazjvyq" method="POST">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+              <button type="submit" class="cta-button">Submit</button>
+            </form>
           </div>
         </div>
       </div>
