@@ -530,9 +530,11 @@ footer a {
     "grey" 
     "orange" 
     "blue";
+    gap: 10px;
   }
 
   .bento {
+    min-height: 300px;
     border-radius: 0;
   }
 }
