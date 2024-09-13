@@ -257,7 +257,7 @@ nav {
 
 .bento p {
   margin: auto;
-  font-size: 2.5em;
+  font-size: 1.3em;
   font-weight: 500;
   color: #323230;
 }
@@ -389,85 +389,85 @@ footer a {
 /* Responsive breakpoints */
 
 @media screen and (max-width: 1280px) {
-    .logo {
-      white-space: nowrap;
-    }
-  
-    .header-container .header-image {
-      max-width: 300px;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .header-container .header-text {
-      max-width: 400px;
-    }
-  
-    .about-and-skills-container {
-      background-color: #323230;
-      padding: 100px 0px;
-    }
-  
-    .about {
-      max-width: 300px;
-    }
-  
-    .skills {
-      max-width: 300px;
-    }
-    
-    .bento-gallery {
-      width: 80%;
-      grid-template-areas: 
-      'purple purple green blue'
-      'grey orange orange blue';
-    }
-  
-    .bento {
-      min-height: 200px;
-    }
+  .logo {
+    white-space: nowrap;
   }
 
-  @media screen and (max-width: 768px) {
-    .logo {
-      white-space: nowrap;
-    }
-  
-    .header-container .header-image {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .header-container .header-text {
-      text-align: center;
-    }
-  
-    .about-and-skills-container {
-      background-color: #323230;
-      padding: 100px 0px;
-    }
-  
-    .about {
-      max-width: 300px;
-    }
-  
-    .skills {
-      max-width: 300px;
-    }
-  
-    .bento-gallery {
-      width: 80%;
-      grid-template-areas: 
-      'purple purple'
-      'green blue'
-      'grey blue'
-      'orange orange';
-    }
-  
-    .bento {
-      min-height: 100px;
-    }
+  .header-container .header-image {
+    max-width: 300px;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
+
+  .header-container .header-text {
+    max-width: 400px;
+  }
+
+  .about-and-skills-container {
+    background-color: #323230;
+    padding: 100px 0px;
+  }
+
+  .about {
+    max-width: 300px;
+  }
+
+  .skills {
+    max-width: 300px;
+  }
+
+  .bento-gallery {
+    width: 80%;
+    grid-template-areas:
+      "purple purple green blue"
+      "grey orange orange blue";
+  }
+
+  .bento {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    white-space: nowrap;
+  }
+
+  .header-container .header-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .header-container .header-text {
+    text-align: center;
+  }
+
+  .about-and-skills-container {
+    background-color: #323230;
+    padding: 100px 0px;
+  }
+
+  .about {
+    max-width: 300px;
+  }
+
+  .skills {
+    max-width: 300px;
+  }
+
+  .bento-gallery {
+    width: 80%;
+    grid-template-areas:
+      "purple purple"
+      "green blue"
+      "grey blue"
+      "orange orange";
+  }
+
+  .bento {
+    min-height: 100px;
+  }
+}
 
 @media screen and (max-width: 576px) {
   .menu-toggle {
@@ -524,12 +524,12 @@ footer a {
 
   .bento-gallery {
     width: 100%;
-    grid-template-areas: 
-    "purple" 
-    "green" 
-    "grey" 
-    "orange" 
-    "blue";
+    grid-template-areas:
+      "purple"
+      "green"
+      "grey"
+      "orange"
+      "blue";
     gap: 10px;
   }
 
